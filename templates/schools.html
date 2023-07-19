@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <img class="logo" src="logo.jpg" width="180" height="180" alt="logo">
+            <br>
+            <li style="margin-top: 10px; padding-top: 1%;">
+
+                <h1><b>
+                        <center>School Project Management System</center>
+                    </b></h1>
+            </li>
+
+        </ul>
+        <style>
+            body {
+                background-color: aliceblue;
+                margin: 0;
+                font-family: Arial, Helvetica, 'Times New Roman', Times, serif;
+            }
+
+            .topnav {
+
+                background-color: white;
+                display: inline-flex;
+                border: 1px solid black;
+                border-radius: 25px;
+                margin-top: 0px;
+                margin-left: 300px;
+                width: 1000px;
+                height: 80px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
+
+            .topnav ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .topnav a:hover {
+                background-color: #808080;
+                color: white;
+
+            }
+
+            .topnav ul li {
+
+                list-style: none;
+                padding: 0px 30px;
+                font-size: 17px;
+                width: 100px;
+            }
+
+            .topnav ul li a {
+                color: black;
+                padding: 20px 50px;
+                font-size: 15px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+        </style>
+        <div class="topnav">
+            <ul>
+                <li><a class="active" href="index.html"><b>Project</b></a></li>
+                <li><a href="report.html"><b>Report</b></a></li>
+                <li><a href="schools.html"><b>Schools</b></a></li>
+                <li><a href="status.html"><b>Status</b></a></li>
+                <li><a href="meeting.html"><b>Meeting</b></a></li>
+                <li><a href="master_login.html"><b>Logout</b></a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <br><br>
+
+
+    <button class="btn">Add School</button>
+
+    <br><br><br><br><br>
+
+    <div style="overflow-x:auto ;">
+        <table class="center">
+
+            <tr>
+                <th>Sr. No.</th>
+                <th>School Name</th>
+                <th>HO/SMC</th>
+                <th>Area</th>
+
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Griffin</td>
+                <td>hhhh</td>
+                <td>dsdsd</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Griffin</td>
+                <td>hhhh</td>
+                <td>dsdsd</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Griffin</td>
+                <td>hhhh</td>
+                <td>dsdsd</td>
+            </tr>
+
+
+
+        </table>
+    </div>
+    <br><br><br><br><br>
+
+    <button class="btnn" style="color: blue;">Add School</button>
+    <br><br><br><br><br>
+
+
+    <!-- form -->
+    <div id="registration-form">
+        <div class='fieldset'>
+
+            <form action="#" method="post" data-validate="parsley">
+                <legend>Add School</legend>
+                <div class='row'>
+
+                    <input type="text" placeholder="School Name" name='firstname' id='firstname' data-required="true"
+                        data-error-message="Project Name is required">
+                </div>
+                <div class='row'>
+
+                    <input type="text" placeholder="SMC Name" name='email' data-required="true" data-type="email"
+                        data-error-message="PO Name is required">
+                </div>
+                <div class='row'>
+
+
+                    <input type="text" placeholder="Area" name='cemail' data-required="true"
+                        data-error-message="Area Name is required">
+
+
+                    <br><br>
+
+
+
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="width-fixed">
+
+            <b><a href="mailto:pixelstat@example.com">Copyright © 2023 Pixelstat</a></b>
+        </div>
+        <div id="pp">
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

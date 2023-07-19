@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <img class="logo" src="logo.jpg" width="180" height="180" alt="logo">
+            <br>
+            <li style="margin-top: 10px; padding-top: 1%;">
+
+                <h1><b>
+                        <center>School Project Management System</center>
+                    </b></h1>
+            </li>
+
+        </ul>
+        <style>
+            body {
+                background-color: aliceblue;
+                margin: 0;
+                font-family: Arial, Helvetica, 'Times New Roman', Times, serif;
+            }
+
+            .topnav {
+
+                background-color: white;
+                display: inline-flex;
+                border: 1px solid black;
+                border-radius: 25px;
+                margin-top: 0px;
+                margin-left: 300px;
+                width: 1000px;
+                height: 80px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+            }
+
+            .topnav ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .topnav a:hover {
+                background-color: #808080;
+                color: white;
+
+            }
+
+            .topnav ul li {
+
+                list-style: none;
+                padding: 0px 30px;
+                font-size: 17px;
+                width: 100px;
+            }
+
+            .topnav ul li a {
+                color: black;
+                padding: 20px 50px;
+                font-size: 15px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+        </style>
+        <div class="topnav">
+            <ul>
+                <li><a class="active" href="smc-project.html"><b>Project</b></a></li>
+                <li><a href="smc-report.html"><b>Report</b></a></li>
+                <li><a href="smc-status.html"><b>Status</b></a></li>
+                <li><a href="master_login.html"><b>Logout</b></a></li>
+               
+                
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <!-- form -->
+
+
+
+
+
+
+
+
+
+
+    <br><br>
+
+    <button class="btn">Add Projects</button>
+
+    <br><br><br><br><br>
+
+    <div style="overflow-x:auto ;">
+        <table class="center">
+
+            <tr>
+                <th>Sr. No.</th>
+                <th>Project Name</th>
+                <th>PO Name</th>
+                <th>SMC Name</th>
+                <th>Area</th>
+                <th>Document</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Lorem</td>
+                <td>Lorem </td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td><button class="bt-table">view</button></td>
+
+                <td><i class="fa fa-edit" style="font-size:40px;color:rgb(217, 225, 56)"></i></td>
+                <td><i class="material-icons" style="font-size:35px;color:red">delete</i></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Griffin</td>
+                <td>ssdd</td>
+                <td>hgjhgj</td>
+                <td>hgjhgj</td>
+                <td><button class="bt-table">view</button></td>
+                <td><i class="fa fa-edit" style="font-size:40px;color:rgb(217, 225, 56)"></i></td>
+                <td><i class="material-icons" style="font-size:35px;color:red">delete</i></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lorem </td>
+                <td>dsdad</td>
+                <td>hgjhgj</td>
+                <td>hgjhgj</td>
+                <td><button class="bt-table">view</button></td>
+                <td><i class="fa fa-edit" style="font-size:40px;color:rgb(217, 225, 56)"></i></td>
+                <td><i class="material-icons" style="font-size:35px;color:red">delete</i></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+    <div id="registration-form">
+        <div class='fieldset'>
+
+            <form action="#" method="post" data-validate="parsley">
+                <legend>Add Project</legend>
+                <div class='row'>
+
+                    <input type="text" placeholder="Project Name" name='firstname' id='firstname' data-required="true"
+                        data-error-message="Project Name is required">
+                </div>
+                <div class='row'>
+
+                    <input type="text" placeholder="PO Name" name='email' data-required="true" data-type="email"
+                        data-error-message="PO Name is required">
+                </div>
+                <div class='row'>
+
+                    <input type="text" placeholder="SMC Name" name='cemail' data-required="true"
+                        data-error-message="SMC Name is required">
+
+                    <input type="text" placeholder="Area" name='cemail' data-required="true"
+                        data-error-message="Area Name is required">
+
+
+                    <br><br>
+
+                    <input type="file" id="myfile" name="myfile" data-required="true"
+                        data-error-message="File is required"><br><br>
+
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+
+    <br><br><br><br><br>
+
+    <button class="btnn">Add Projects</button>
+
+
+
+    <br><br><br><br><br><br>
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+
+
+        function show() {
+
+            document.getElementById('image1')
+                .style.display = "block";
+            document.getElementById('btn1')
+                .style.display = "none";
+        }
+
+    </script>
+
+    <footer>
+        <div class="width-fixed">
+
+            <b><a href="mailto:pixelstat@example.com">Copyright © 2023 Pixelstat</a></b>
+        </div>
+        <div id="pp">
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
